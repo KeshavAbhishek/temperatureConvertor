@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="upper" class="section">
+        <h1>Temperature Converter</h1>
+        <div id="input_select">
+            <input type="number" id="text" placeholder="Enter temperature" value="">
+            <select id="select" oninput="run()" value="C">
+                <option value="C">Celcius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+                <option value="R">Reaumur</option>
+            </select>
+        </div>
+    </div>
+    <div id="lower" class="section">
+        <text id="box-1" class="box">
+            <span class="temp">0°C</span>
+            <span class="footer">Celcius</span>
+        </text>
+        
+        <text id="box-2" class="box">
+            <span class="temp">32°F</span>
+            <span class="footer">Fahrenheit</span>
+        </text>
+        
+        <text id="box-3" class="box">
+            <span class="temp">273K</span>
+            <span class="footer">Kelvin</span>
+        </text>
+        
+        <text id="box-4" class="box">
+            <span class="temp">0°R</span>
+            <span class="footer">Reaumur</span>
+        </text>
+    </div>
+    <script src="node.js" defer></script>
+</body>
+</html>

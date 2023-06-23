@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: none; */
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#upper{
+    height: 40vh;
+    background: aquamarine;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#lower{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+select{
+    padding: 10px 15px;
+    font-size: 1.95rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 15px;
+}
+
+input{
+    padding: 10px 15px;
+    font-size: 1.95rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+#input_select{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+.box{
+    width: 250px;
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    flex-direction: column;
+    cursor: pointer;
+
+    position: relative;
+
+    margin: 10px 0;
+}
+
+.box .temp{
+    font-size: 2.3rem;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    background: aqua;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::placeholder{
+    color: #000;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: aquamarine;
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+    /* position: absolute;
+
+    top: 25px; */
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 15px;
+    border: 2px  solid red;
+
+    box-shadow: inset 4px 4px 4px -1px red, 4px 4px 4px -1px red;
+}
+
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 1.8rem;
+        width: 80%;
+        top: 15px;
+    }
+
+    #upper{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #input_select{
+        width: 90%;
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input{
+        width: 100%;
+        margin-top: 30px;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    select{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .box{
+        width: 150px;
+        height: 200px;
+    }
+
+    .box .temp{
+        font-size: 1.8rem;
+    }
+
+    .footer{
+        font-size: 1.2rem;
+        height: 20%;
+    }
+
+    #upper{
+        height: 45vh;
+    }
+
+    #lower{
+        height: 55vh;
+    }
+}
